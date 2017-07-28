@@ -1,7 +1,7 @@
 <ul class="dogs">
   {{#each model as |dog|}}
     <li>
-      {{dog-listing dog=dog}}
+      {{#link-to "dog" dog.id}}{{dog-listing dog=dog}}{{/link-to}}
     </li>
   {{/each}}
 </ul>
