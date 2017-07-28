@@ -10,5 +10,6 @@ test('visiting /dogs', function(assert) {
     assert.equal(currentURL(), '/dogs');
 
     assert.equal(find(".dogs li").length, 3);
+    assert.equal(find(".dogs li:nth-child(1) h3").text(), "Charles Barkley");
   });
 });
