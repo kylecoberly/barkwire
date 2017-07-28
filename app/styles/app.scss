@@ -1,0 +1,106 @@
+@import "reset";
+
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans");
+$primary-color: hsl(140, 40%, 50%);
+$secondary-color: hsl(260, 40%, 50%);
+$black: #333;
+$grey: #999;
+$white: #eee;
+$pure-white: #fff;
+
+body {
+    color: $black;
+    background-color: $white;
+    font-family: "Open Sans";
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+label {
+    font-style: italic;
+    margin-bottom: 0.25rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+header {
+    background-color: $primary-color;
+    padding: 1rem;
+    box-shadow: 0 1px 1px $grey;
+    h1 {
+        font-size: 2rem;
+        color: $pure-white;
+        font-family: "Indie Flower";
+    }
+}
+
+main {
+    padding: 3rem;
+    position: relative;
+    min-height: calc(100vh - 112px);
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+footer {
+    padding: 1rem;
+    background-color: $black;
+    color: $white;
+}
+
+.dogs {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.dog-listing {
+    max-width: 30rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 2px $grey;
+    transition: all 0.2s;
+    &:hover {
+      transform: scale(1.03);
+    }
+    h3 {
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        background-color: $secondary-color;
+        padding: 1rem;
+        color: $white;
+    }
+    figure {
+        margin-right: 1rem;
+        padding: 1rem;
+        img {
+            max-width: 160px;
+        }
+        figcaption {
+            font-style: italic;
+        }
+    }
+    section {
+        display: flex;
+    }
+    p {
+        padding: 1rem;
+        line-height: 1.5;
+    }
+}
+

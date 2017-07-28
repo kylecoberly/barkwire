@@ -1,5 +1,6 @@
 {
   "name": "barkwire",
   "dependencies": {
+    "reset-scss": "^2.0.2"
   }
 }

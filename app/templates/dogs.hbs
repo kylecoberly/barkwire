@@ -1,16 +1,16 @@
 <ul class="dogs">
-  <li>
-    <section class="dog-listing">
-      <h3>Charles Barkley</h3>
-      <section>
-        <figure>
-          <img src="" alt="">
-          <figcaption></figcaption>
-        </figure>
-        <p>asdf</p>
+  {{#each model as |dog|}}
+    <li>
+      <section class="dog-listing">
+        <h3>{{dog.name}}</h3>
+        <section>
+          <figure>
+            <img src="{{dog.imageUrl}}" alt="{{dog.name}}">
+            <figcaption>{{dog.imageCaption}}</figcaption>
+          </figure>
+          <p>{{dog.description}}</p>
+        </section>
       </section>
-    </section>
-  </li>
-  <li></li>
-  <li></li>
+    </li>
+  {{/each}}
 </ul>
