@@ -1,16 +1,7 @@
 <ul class="dogs">
   {{#each model as |dog|}}
     <li>
-      <section class="dog-listing">
-        <h3>{{dog.name}}</h3>
-        <section>
-          <figure>
-            <img src="{{dog.imageUrl}}" alt="{{dog.name}}">
-            <figcaption>{{dog.imageCaption}}</figcaption>
-          </figure>
-          <p>{{dog.description}}</p>
-        </section>
-      </section>
+      {{dog-listing dog=dog}}
     </li>
   {{/each}}
 </ul>
